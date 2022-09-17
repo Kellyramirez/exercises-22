@@ -1,0 +1,66 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+  color: hotpink;
+}
+
+.div__block--examples{
+  height:900vh;
+}
+
+.div__block--examples > *{
+  width: 90px;
+  height: 90px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+/* Static - Es estatico- no recibe top-left-bottom */
+.div__static--yellow{
+  background-color:yellow;
+  position:static;
+}
+/* Relative- Es relativo a su posición original - default (es estatico)*/
+.div__relative--hotpink{
+  background-color:hotpink;
+  position: relative;
+  top: 40px;
+  left: 40px;
+}
+
+/* Fixed - Es fijo- si recibe top,left,bottom */
+/* El fixed mantiene la posicion en base al viewport */
+.div__fixed--blue{
+  background-color:blue;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+}
+
+/* Absolute es a la posicion de  su antesesor */
+.div__absolute--red{
+  background-color:red;
+  position: absolute;
+  top: 60px;
+  left: 60px;
+}
+
+/* Sticky - Mantiene la posicion al scroll - obedece al scroll*/
+.div__sticky--peru{
+  background-color:peru;
+  position: sticky;
+  top: 50px;
+}
+
+/* z-index positivo - va a adelante */
+/* z-index negativo- va a atras */
+.img__z-index{
+  position: absolute;
+  z-index: -1;
+}
+
+.p__z-index--white{
+  color: yellow;
+}
